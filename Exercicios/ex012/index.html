@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cursoemvideo02.ico" type="img/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="media/meu-video.webm" width="500" preload="metadata" controls></video>
+    <p>O segundo video apesar de ser o mesmo foi adicionado usado a tag source dentro da tag video, para uparmos vários formatos do mesmo video caso seja necessário.</p>
+    <video width="500" poster="imagens/limoes-capa.png" controls>
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.m4v" type="video/mp4">
+        <source src="media/meu-video.webm" type="video/webm">
+        <source src="media/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com a reprodução de videos, para download do arquivo <a href="media/meu-video.mp4" download type="video/mp4">clique aqui</a>.</p>
+    </video>
+    
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/XIAxoSXggBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/197093965">Reel 2016</a> from <a href="https://vimeo.com/wabbla">Alvise Zennaro</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
