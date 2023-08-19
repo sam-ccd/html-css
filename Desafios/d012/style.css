@@ -69,6 +69,20 @@ section.image {
     color: white;
 }
 
+section#img1.image {
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img2.image {
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 section.image > p {
     background-color: rgba(0, 0, 0, 0.253);
     width: 420px;
