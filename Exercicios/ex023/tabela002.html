@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="cursoemvideo02.ico" type="img/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead {
+            background-color: rgb(73, 73, 73);
+            color: white;
+        }
+
+        thead th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 73, 73);
+        }
+
+        tfoot {
+            background-color: rgb(99, 99, 99);
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(151, 182, 105);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgb(67, 87, 38);
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table th#pop {
+            width: 100px;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" id="pop">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 054</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">14 215 909</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">26 354 218</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">27 274 942</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">23 264 743</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">13 264 943</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Totalização</th>
+            <td class="num"><strong>210 147 125</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
