@@ -1,0 +1,53 @@
+<!DOCTYPE hmtl>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cursoemvideo02.ico" type="img/x-icon">
+    <title>Formulário</title> 
+</head>
+<body>
+    <h1>Select, datalist e textarea em HTML</h1>
+    <form action="cadastro.php" method="post">
+        
+        <p>
+            <label for="iselect">Estado:</label>
+            <select name="select" id="iselect">
+
+                <option value="placeholder">------</option>
+                
+                <optgroup label="Região Nordeste">
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="AL">Alagoas</option>
+                </optgroup>
+                
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito santo</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="idatalist">Profissão:</label>
+            <input type="text" name="datalist" id="idatalist" list="listdata">
+            <datalist id="listdata">
+                <option value="Design">Designer de produto</option>
+                <option value="Engenharia">Engenheiro elétrico</option>
+                <option value="Direito">Advogado</option>
+                <option value="Física">Professor de física</option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="itextarea">Fale um pouco sobre você:</label><br>
+            <textarea name="textarea" id="itextarea" cols="50" rows="10" minlength="0" maxlength="10"></textarea>
+        </p>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
